@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+
+.d-center {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Thiệp */
+.envelope-icon {
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  animation: pulse 1.5s infinite;
+  margin-top: 330px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.slide-card {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 400px;
+  height: 350px;
+  margin: 30px auto;
+  overflow: hidden;
+  display: none; /* Ẩn ban đầu */
+}
+
+.card-content {
+  background-image: url("background-card.png");
+  background-size: cover; background-position: center;
+  color: #c72d2f;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  transform: translateY(120%); /* nằm ngoài khung */
+  transition: transform 1s;
+}
+
+
