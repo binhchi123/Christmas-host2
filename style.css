@@ -91,7 +91,7 @@ body {
 /* Responsive cho màn hình nhỏ */
 @media (max-width: 768px) {
   body {
-    background-size: contain;
+    background-size: 100% 100%;
   }
 
   .envelope-icon {
