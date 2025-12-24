@@ -103,9 +103,7 @@ body {
 
 @media (max-width: 480px) {
   body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    background-size: 100% 100%;
   }
 
   .envelope-icon {
