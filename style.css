@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("background.png");
+    background-image: url("uploads/background.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
 }
 
 .card-content {
-  background-image: url("background-card.png");
+  background-image: url("uploads/background-card.png");
   background-size: cover; background-position: center;
   color: #c72d2f;
   border-radius: 15px;
@@ -63,5 +63,50 @@ body {
   transform: translateY(120%); /* nằm ngoài khung */
   transition: transform 1s;
 }
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .envelope-icon {
+    font-size: 2.2em;   /* thu nhỏ icon */
+    margin-top: 200px;  /* điều chỉnh khoảng cách */
+  }
+
+  .slide-card {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%); /* căn giữa theo chiều ngang */
+    width: 90%;   /* chiếm gần hết chiều ngang màn hình */
+    height: auto; /* tự động theo nội dung */
+  }
+
+  .card-content {
+    padding: 15px;
+    font-size: 0.9em;   /* chữ nhỏ hơn để vừa màn hình */
+    transform: translateY(120%);
+  }
+}
+
+@media (max-width: 480px) {
+  .envelope-icon {
+    font-size: 2em;
+    margin-top: 150px;
+  }
+
+  .slide-card {
+    top: 10%;
+    width: 95%;
+    height: auto;
+  }
+
+  .card-content h1 {
+    font-size: 1.5em;
+  }
+
+  .card-content p {
+    font-size: 0.85em;
+  }
+}
+
+
 
 

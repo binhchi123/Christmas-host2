@@ -1,3 +1,8 @@
+ document.body.addEventListener("click", function() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        });
+
 const snows_canvas = document.getElementById("SnowsCanvas");
 const snows_ctx = snows_canvas.getContext("2d");
 
